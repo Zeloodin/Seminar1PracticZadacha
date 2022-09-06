@@ -1,8 +1,9 @@
 ﻿Console.Clear();
-
-int a = new Random().Next(0, 1000); // int (0, 1) == 0 ... 0
+// int n1 = new Random().Next(0, 1) == 0 ... 0
+// int n2 = new Random().Next(10,10 or 11) == 10 ... 10
+int a = new Random().Next(0, 1000); 
 Console.WriteLine(a);
-int b = new Random().Next(0, 1000); // int (10,10 or 11) == 10 ... 10
+int b = new Random().Next(0, 1000); 
 Console.WriteLine(b);
 
 if (a > b)
