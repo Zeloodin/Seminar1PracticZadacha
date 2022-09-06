@@ -1,29 +1,27 @@
-﻿int numberA;
-int numberB;
-int numberC;
-
-Console.Write("Введите целое первое число: ");
-while (!int.TryParse(Console.ReadLine(), out numberA))
+﻿Console.Clear();
+// int n1 = new Random().Next(0, 1) == 0 ... 0
+// int n2 = new Random().Next(10,10 or 11) == 10 ... 10
+int a = new Random().Next(0, 1000); 
+int b = new Random().Next(0, 1000); 
+Console.Write("a=");
+Console.Write(a);
+if (a > b)
 {
-    Console.Write("Ошибка ввода! Введите целое первое число: ");
+    int max = a;
+    int min = b;
+    Console.Write(" больше ");
 }
-
-Console.Write("Введите целое второе число: ");
-while (!int.TryParse(Console.ReadLine(), out numberB))
+else if (a == b)
 {
-    Console.Write("Ошибка ввода! Введите целое второе число: ");
+    int max = b;
+    int min = a;
+    Console.Write(" равен ");
 }
-
-Console.Write("Введите целое третье число: ");
-while (!int.TryParse(Console.ReadLine(), out numberC))
+else
 {
-    Console.Write("Ошибка ввода! Введите целое третье число: ");
-}
-int max = numberA;
-if (numberA > max) max = numberA;
-if (numberB > max) max = numberB;
-if (numberC > max) max = numberC;
-Console.Write("Введённое максимальное число: max = ");
-Console.WriteLine(max);
-
-Console.WriteLine($"{numberA}, {numberB}, {numberC} -> {max}");
+    int max = a;
+    int min = b;
+    Console.Write(" меньше ");
+};
+Console.Write("b=");
+Console.WriteLine(b);

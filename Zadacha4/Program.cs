@@ -1,10 +1,29 @@
-﻿Console.Write("Введите число: ");
-double numberN = Convert.ToDouble(Console.ReadLine());
-for (int i = 1; i <= numberN; i++)
+﻿int numberA;
+int numberB;
+int numberC;
+
+Console.Write("Введите целое первое число: ");
+while (!int.TryParse(Console.ReadLine(), out numberA))
 {
-    if (i % 2 == 0)
-    {
-        Console.Write($"{i} ");
-    };
+    Console.Write("Ошибка ввода! Введите целое первое число: ");
 }
-Console.WriteLine();
+
+Console.Write("Введите целое второе число: ");
+while (!int.TryParse(Console.ReadLine(), out numberB))
+{
+    Console.Write("Ошибка ввода! Введите целое второе число: ");
+}
+
+Console.Write("Введите целое третье число: ");
+while (!int.TryParse(Console.ReadLine(), out numberC))
+{
+    Console.Write("Ошибка ввода! Введите целое третье число: ");
+}
+int max = numberA;
+if (numberA > max) max = numberA;
+if (numberB > max) max = numberB;
+if (numberC > max) max = numberC;
+Console.Write("Введённое максимальное число: max = ");
+Console.WriteLine(max);
+
+Console.WriteLine($"{numberA}, {numberB}, {numberC} -> {max}");
