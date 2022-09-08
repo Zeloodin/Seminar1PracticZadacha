@@ -1,8 +1,7 @@
 ﻿Console.Write("Введите число: ");
 double numberN = Convert.ToDouble(Console.ReadLine());
-for (int i = 1; i <= numberN; i++)
+for (int i = 2; i <= numberN; i = i + 2)
 {
-    if (i % 2 == 0)
     {
         Console.Write($"{i} ");
     };
