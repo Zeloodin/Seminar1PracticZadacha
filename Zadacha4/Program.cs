@@ -20,7 +20,6 @@ while (!int.TryParse(Console.ReadLine(), out numberC))
     Console.Write("Ошибка ввода! Введите целое третье число: ");
 }
 int max = numberA;
-if (numberA > max) max = numberA;
 if (numberB > max) max = numberB;
 if (numberC > max) max = numberC;
 Console.Write("Введённое максимальное число: max = ");
