@@ -1,5 +1,5 @@
 ﻿Console.Write("Введите число: ");
-double number2 = Convert.ToDouble(Console.ReadLine());
+int number2 = Convert.ToInt(Console.ReadLine());
 if (number2 % 2 == 0)
 {
     Console.WriteLine($"число {number2} чётное");  
