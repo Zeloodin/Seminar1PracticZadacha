@@ -7,20 +7,14 @@ Console.Write("a=");
 Console.Write(a);
 if (a > b)
 {
-    int max = a;
-    int min = b;
     Console.Write(" больше ");
 }
 else if (a == b)
 {
-    int max = b;
-    int min = a;
     Console.Write(" равен ");
 }
 else
 {
-    int max = a;
-    int min = b;
     Console.Write(" меньше ");
 };
 Console.Write("b=");
